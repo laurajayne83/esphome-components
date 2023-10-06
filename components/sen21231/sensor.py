@@ -20,7 +20,7 @@ CONFIG_SCHEMA = (
             cv.GenerateID(): cv.declare_id(Sen21231Sensor),
         }
     )
-    .extend(cv.polling_component_schema("30s"))
+    .extend(cv.polling_component_schema("5s"))
     .extend(i2c.i2c_device_schema(0x62))
 )
 
